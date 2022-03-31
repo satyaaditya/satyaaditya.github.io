@@ -1,8 +1,225 @@
-<html>
-<head></head>
-<body>
-<h1>HI THIS IS ADITYA....</h1>
-  <p>happiee CoDiNg  :)</p>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/css/index_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        $(document).ready(function () {
+            var places_first_row = $("#places-first-row");
+            places_first_row.addClass('row-highlight');
+            var a= 1
+        });
 
+    </script>
+    <script>
+         $(document).ready(function () {
+            $("table.places tbody tr").hover(function (){
+                 var places_first_row = $("#places-first-row");
+                 places_first_row.removeClass('row-highlight');
+            });
+         });
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+
+    <div class="section-1">
+        <h2 class="font-c">About Me</h2>
+        <div class="row">
+            <div class="col col-8">
+                <h1 class="section-1-heading" style="text-align:center">SatyaAditya Baratam</h1>
+                <p class="section-1-paragraph" style="text-align:justify">Hello people, My name is SatyaAditya. I am
+                    currently working as SDE-2 in Amazon Development Center, Hyderabad.
+                    You can reach out to me on <a href="mailto:satyaadityabaratam@gmail.com">
+                        satyaadityabaratam@gmail.com </a>
+                </p>
+            </div>
+            <div class="col col-4">
+                <img class="round-circle display-pic" src="static/img/display_pic.jpeg" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="section-2 dark-bgm">
+        <h2 class="font-c">Education & Work</h2>
+        <br>
+
+        <table class="table-striped experience-table">
+
+            <tr>
+                <td><br>Software Development Engineer II, Amazon Hyderabad
+                </td>
+                <td>2022, April - Present</td>
+            </tr>
+            <tr>
+                <td><br>Software Engineer, kore.ai <br><br> Was part of SearchAssistant team. Worked on building
+                    a platform through which enterprises can build search engines for all their data.
+                </td>
+                <td>2020-2022</td>
+            </tr>
+            <tr>
+                <td><br>Associate Software Engineer, kore.ai<br><br>Was part of Knowledge Graph team. Worked
+                    on developing a platform through which enterprises can build Knowledge Graphs on their data which
+                    is one of the chatbot response source.
+                </td>
+                <td>2018-2020</td>
+            </tr>
+            <tr>
+                <td><br>Software Development Engineer Intern, Amazon Hyderabad<br><br> In six months internship in
+                    Amazon
+                    customer service team, i worked on Agent Side Chat migration project.
+                </td>
+                <td>2018</td>
+            </tr>
+            <tr>
+                <td><br>BTech in Computer Science From Gayatri Vidya Parishad College of Engineering</td>
+                <td>2014-2018</td>
+            </tr>
+        </table>
+    </div>
+    <div class="section-3">
+        <br>
+        <h2 class="font-c">Reads</h2>
+        <br>
+    </div>
+    <div class="section-4 dark-bgm">
+        <br>
+        <h2 class="font-c">Travel</h2> <br>
+        I try to travel whenever i can as of now and i hope that would be the case going forward.
+        <div style="margin-left:50px;margin-top:20px">
+            <div class="row">
+                <div class="col col-5">
+                    <table class="table table-hover places">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Location</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr id="places-first-row">
+                            <th scope="row">1</th>
+                            <td title="click to see places visited">Rajasthan</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td title="click to see places visited">Uttarakhand</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td title="click to see places visited">Himachal Pradesh</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td title="click to see places visited">Meghalaya</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td title="click to see places visited">Kerala</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td title="click to see places visited">Karnataka</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col col-7">
+                    <div class="row">
+                    <div class="col-6">
+                        <h3 class="mb-3" style="text-align: center">Places visisted in Rajasthan </h3>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Jaipur</h4>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ajmer</h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Jaisalmer</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Jodhpur</h4>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Udaipur</h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 </body>
+<footer>
+    <div style="margin-top: 100px">
+        THE END
+    </div>
+</footer>
 </html>

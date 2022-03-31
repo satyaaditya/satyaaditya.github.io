@@ -1,0 +1,50 @@
+.font-c {
+            text-shadow: 2px 2px 2px #b3a1a1;
+
+        }
+.section-1 {
+      color: rgb(28, 28, 28);
+      position: relative;
+       min-height: 450px;
+}
+
+.section-1-heading {
+    padding-top: 100px;
+    color: #1c1c1c;
+    font-size: 62px;
+    line-height: 1.2;
+    position: relative;
+}
+
+.section-1-paragraph {
+    padding: 25px;
+    color: #c1c1c;
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+    margin-left: 50px
+}
+.round-circle {
+    border-radius: 17%
+}
+
+.display-pic {
+        max-width: 40%;
+        margin-left: 120px;
+        margin-top: 50px;
+}
+
+.experience-table {
+    margin-left: 50px
+}
+td {
+    padding: 15px;
+}
+
+.dark-bgm {
+background-color: #f3f9fa;
+}
+
+.row-highlight {
+    background-color: rgba(0,0,0,.075);
+}

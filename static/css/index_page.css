@@ -24,6 +24,7 @@
     position: relative;
     margin-left: 50px
 }
+
 .round-circle {
     border-radius: 17%
 }
@@ -47,4 +48,25 @@ background-color: #f3f9fa;
 
 .row-highlight {
     background-color: rgba(0,0,0,.075);
+}
+
+.dark-heading {
+    color: #333
+}
+
+.new-font {
+   font-family: Brandon Grotesque, brandon, helvetica, sans-serif;
+   line-height: 1.2;
+   font-weight: 700;
+   font-size: 3rem;
+}
+
+
+h2::before, h2::after {
+    display: inline-block;
+    border-top: .3rem solid #333;
+    content: "";
+    width: 7rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
 }
